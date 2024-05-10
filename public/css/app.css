@@ -1,4 +1,13 @@
-*{margin: 0; padding: 0}
+*{margin: 0; padding: 0; transition: 0.4s;}
+
+:root {
+    --primary: #003c43;
+    --secondary: #135d66;
+    --tertiary: #77b0aa;
+    --quaternary: #e3fef7;
+  }
+
+body {background-color: var(--secondary);}
 
 .d-flex {display: flex;}
 
@@ -6,5 +15,53 @@
 
 .align-center {align-items: center;}
 
+.justify-between {justify-content: space-between;}
+
+ul {list-style: none!important;}
+
+label, .title {color: var(--quaternary);}
 
 .form-col {float: none}
+
+.fa-trash, .fa-pen-to-square {cursor: pointer; color: var(--quaternary); font-size: 18px; }
+
+.fa-trash:hover, .fa-pen-to-square:hover { color: var(--primary); transition: 0.4s;}
+
+/* SIDEBAR */
+
+.sidebar {background-color: var(--primary);  padding: 0; margin: 0;}
+
+@media(min-width: 993px){
+    .sidebar {height: 100vh;}
+}
+
+.sidebar h2 {color: var(--quaternary);   }
+.sidebar h4 { color: var(--quaternary); }
+.sidebar h3 {color: var(--quaternary); padding-left: 10px; }
+.sidebar .title-name {padding-left: 10px;  padding-bottom: 20px; border-bottom:  1px solid var(--secondary); flex-direction: column;}
+
+.sidebar a:hover  {text-decoration: none;}
+
+.sidebar a:hover h3 {color: var(--tertiary);}
+
+@media (max-width:992px){
+    .sidebar { position: relative; }
+    .sidebar h2 {margin: auto; padding-top: 20px;}
+    .sidebar .title-name { padding-left: 0px; text-align: center;}
+}
+
+/* HOME TABLE USERS */
+
+
+
+.users-table {margin-top: 35px; color: var(--quaternary);}
+
+.user-card {background-color: var(--primary);}
+
+.user-card:hover{ background-color: var(--tertiary);}
+
+.user-card td {color: var(--quaternary);}
+
+.btn-custom {background-color: var(--tertiary); color: var(--quaternary);}
+
+/* HOME TABLE USERS */

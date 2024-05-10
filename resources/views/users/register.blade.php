@@ -23,7 +23,12 @@
                </div> 
                <button type="submit" class="btn btn-sm btn-primary" id="user-registration-button">Enviar</button>
             </form>
+    
+            @if (Session::has('administrator'))
+            <a href="{{ route('list') }}">Ir a listado</a>
+            @endif
         </div>
+
     </div>
 </div>
 
